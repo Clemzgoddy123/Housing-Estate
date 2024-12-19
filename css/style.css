@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.container{
+
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+
+    animation: slide 20s infinite;
+}
+
+@keyframes slide{
+    0%{
+        background-image: url('img5.jpeg');
+    }
+    25%{
+        background-image: url('img6.jpeg');
+    }
+    60%{
+        background-image: url('img7.jpeg');
+    }
+    100%{
+        background-image: url('img8.jpeg');
+    }
+    
+    
+}
+.icon{
+    height: 70px;
+    background-color: #fff;
+    border: 2px solid white;
+    border-radius: 60%;
+    width: 10%;
+}
+section{
+    margin: 200px 450px;
+    display: flex;
+    gap: 300px;
+    
+}
+button{
+    height: 40px;
+    width: 200%;
+    border-radius: 8px;
+    background-color:  #7aacff;
+    color: #fff;
+    font-size: larger;
+    font-family: sans-serif;
+}
+button:hover{
+    background-color: #31548b;
+}
+button:active{
+    background-color:#829dc9;
+}
+p{
+    font-size: 80px;
+    color: goldenrod;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 50px;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+@media (max-width:375px) {
+p{
+    font-size: 30px;
+}
+section{
+    gap: 10px;
+    margin-left: 0;
+    font-size: 10px;
+    margin-right: 30px;
+    
+}  
+button{
+    align-items: center;
+    margin-left: 0px;
+    width: 70%;
+    font-size: smaller;
+    
+}
+}
+@media (max-width:896px) {
+p{
+    font-size: 30px;
+}
+section{
+    gap: 0;
+    margin-left: 0;
+    font-size: 28px;
+    margin-right: 300px;
+    
+}  
+
+button{
+    align-items: center;
+    margin-left: 0px;
+    width: 50%;
+    height: 50px;
+    font-size: 15px;
+    
+}
+}
+@media (max-width:768px) {
+    p{
+        font-size: 30px;
+    }
+    section{
+        gap: 0;
+        margin-left: 0;
+        font-size: 28px;
+        margin-right: 300px;
+        display: inline-block;
+        
+    }  
+    
+    button{
+        align-items: center;
+        margin-left: 0px;
+        width: 90%;
+        height: 50px;
+        font-size: 12px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        
+    }
+    }
+@media (max-width:1024px) {
+    section{
+        gap: 150px;
+        margin-left: 150px;
+        margin-right: 100px;
+        align-items: center;
+        display: contents;
+     
+       
+        
+    }
+    p{
+        font-size: 30px;
+    } 
+    button{
+        align-items: center;
+        margin-left: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 90%;
+    }
+}

@@ -1,0 +1,605 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+    background-color: #fff;
+    height: 20vh;
+    padding-top: 20px;
+    max-width: 300px;
+
+}
+button.List{
+    background-color: goldenrod;
+    height: 30px;
+    width: 100px;
+    border: 1px solid goldenrod;
+    border-radius: 8px;
+    margin-right: 100px;
+}
+li{
+    list-style: none;
+}
+nav{
+    display: flex;
+    gap: 30px;
+    font-family: sans-serif;
+    font-size: 15px;
+    position: relative;
+}
+nav li{
+    margin-top: 20px;
+    cursor: pointer;
+    
+}
+nav li:hover{
+    color: white;
+    height: 30px;
+    background-color: goldenrod;
+}
+.menu-feature{
+    display: none;
+    top: 100%;
+    background-color: whitesmoke;
+    width: 400px;
+    
+    
+    
+}
+.slide{
+    margin-top: 50px;
+    margin-left: 100px;
+    cursor: pointer;
+}
+#log{
+    height: 80px;
+    width: 200%;
+    border-radius: 50%;
+}
+.par1{
+    padding: 0 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #000;
+    font-weight: bolder;
+}
+.asi{
+    margin-right: 100px;
+    margin-top: 40px;
+    cursor: pointer;
+
+}
+span{
+    height:20px;
+    width: 30%;
+}
+.sect{
+ 
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+
+    animation: slide 30s infinite;
+}
+@keyframes slide{
+    0%{
+        background-image: url(house.JPG);
+    }
+    20%{
+        background-image: url(house2.jpg);
+    }
+    40%{
+        background-image: url(img10.jpg);
+    }
+    60%{
+        background-image: url(img12.jpg);
+    }
+    80%{
+        background-image: url(img11.png);
+    }
+    100%{
+        background-image: url(img13.jpg);
+    }
+}
+.text{
+   
+   padding-top: 100px;
+   
+   
+}
+.par2{
+    font-size: 40px;
+    padding-bottom: 20px;
+    color: #fff;
+    font-family: sans-serif;
+    padding-left: 80px;
+    font-weight: lighter;
+}
+.par3{
+    font-size: 80px;
+    padding-bottom: 20px;
+    color: #fff;
+    font-family: sans-serif;
+    padding-left: 80px;
+    font-weight: normal;
+    
+}
+/*.par4{
+    font-size: 50px;
+    padding-bottom: 20px;
+    color: yellow;
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding-left: 80px;
+}*/
+.text-Animation{
+    position: relative;
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: goldenrod;
+}
+.par4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+#displayText.active{
+    opacity: 1;
+}
+.par5{
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    font-family: sans-serif;
+    padding-left: 80px;
+    word-spacing: 10px;
+    
+}
+.btn{
+    margin: 20px 80px;
+
+}
+.btn10{
+    height: 50px;
+    width: 25%;
+    background-color: gold;
+    font-family: sans-serif;
+    border-radius: 5px;
+    border: 1px solid gold;
+}
+h2{
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+.text2{
+    
+    padding-left: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+    font-weight: lighter;
+}
+h3{
+    font-family: sans-serif;
+    padding-left: 20px;
+    font-weight: lighter;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.text3{
+    padding-left: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: small;
+    font-weight: lighter;
+}
+.text5{
+    padding-left: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: small;
+    font-weight: lighter;   
+    
+}
+.ima{
+    height: 100vh;
+    width: 90%;
+    margin-left: 70px;
+    margin-right:40px ;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+.heading{
+    font-size: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
+    font-family: sans-serif;
+}
+.heading2{
+    font-size: 20px;
+    padding-left: 50px;
+    padding-top: 20px;
+    font-family: sans-serif;
+    color: gray;
+}
+ul li{
+    list-style-type: none;
+}
+nav ul{
+    padding-top: 20px;
+    padding-left: 50px;
+    display: flex;
+    font-size: 15px;
+    gap: 60px;
+    font-family: sans-serif;
+    
+
+
+}
+nav ul li{
+  cursor: pointer;
+  border-radius: 15px;
+  width: 7%;
+  color: grey;
+  height: 30px;
+  padding: 8px;
+}
+
+nav ul li:hover{
+   background-color: black;
+   color: #fff; 
+}
+.icons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    
+}
+.grid{
+    height: 230px;
+    width: 90%;
+    margin-top: 40px;
+    border-radius: 15px;
+    
+}
+.grid1{
+    height: 350px;
+    width: 90%;
+    margin-top: 40px;
+    border-radius: 15px;
+    
+}
+.par9{
+    padding-top: 20px;
+    padding-left: 30px;
+    
+}
+.par6{
+    padding-bottom: 10px;
+    font-size: smaller;
+    color: gray;
+    font-family: fantasy;
+}
+.par7{
+    padding-bottom: 10px;
+    font-size: larger;
+    color: #000;
+    font-family: sans-serif;
+}
+.par8{
+    padding-bottom: 10px;
+    font-size: smaller;
+    color: gray;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+button.btn{
+    background-color: rgb(55, 31, 160);
+    color: #fff;
+    margin-left: 500px;
+    width: 15%;
+    height: 50px;
+}
+.header{
+    text-align: center;
+    font-family: sans-serif;
+}
+.par10{
+    padding-left: 50px;
+    padding-top: 20px;
+    font-size: larger;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ h2.par13{
+    padding-left: 30px;
+    font-size: 70px;
+    font-family: sans-serif;
+ }
+ .par15{
+    padding-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+
+ }
+ .icon4{
+    display: flex;
+    gap: 70px;
+    margin-left: 50px;
+    background-color: rgb(186, 219, 238);
+ }
+ .icon6{
+    height: 300px;
+    width: 100%;
+    border-radius: 15px;
+ }
+ .par11{
+    font-size: 50px;
+    font-family: sans-serif;
+    padding-top: 80px;
+ }
+.par12{
+    color: gray;
+    font-family: sans-serif;
+    word-wrap: 20px;
+    padding-top: 10px;
+}
+.icon9{
+    height: 300px;
+    width: 150%;
+    border-radius: 15px;
+ }
+ .icon10{
+    display: flex;
+    gap: 200px;
+    margin-left: 50px;
+    background-color: rgb(186, 219, 238);
+ }
+ .first{
+    background-color: black;
+ }
+
+.icon20{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 10px;
+    column-gap: 0;
+    margin-left: 50px;
+}
+.icon21{
+    height: 50vh;
+    width: 100%;
+    margin-left: 0px;
+    
+}
+
+.icon22{
+    background-color: rgb(202, 195, 195);
+    border-radius: 15px;
+    width: 90%;
+}
+
+.what{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 40px;
+    padding-top: 90px;
+}
+.number{
+    display: flex;
+    gap: 250px;
+    padding-left: 180px;
+    font-size: larger;
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding-top: 40px;
+    color: gray;
+}
+.num{
+    text-align: center;
+    padding-bottom: 10px;
+    color: gold;
+}
+.divide{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.logo3{
+    height: 80px;
+    width: 10%;
+    border-radius: 156px;
+}
+.clemz3{
+    padding-top: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+}
+.font{
+    word-spacing: 30px;
+    padding-top: 20px;
+    padding-left: 80px;
+}
+.sub-footer{
+    display: flex;
+    gap: 100px;
+    padding-top: 30px;
+    padding-left: 80px;
+}
+.footer{
+    background-color: rgb(212, 208, 208);
+}
+ul li .fun{
+    word-spacing: 20px;
+    padding-bottom: 20px;
+    font-size: 10px;
+    font-family: sans-serif;
+}
+.name{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.login-form-container{
+    max-width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px auto;
+    width: 150%;
+    padding: 20px;
+    background-color: #fff6ff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    
+}
+.login-form{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.login-form label {
+ display: block;
+ margin-bottom: 10px;
+}
+.form2{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    gap: 5px;
+}
+.login-form input[type="text"],.login-form input[type="password"],.login-form input[type="email"],.login-form input[type="number"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+.login-form input[type="text"]#messages{
+    height: 10vh;
+}
+.login-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login-form button[type="submit"] :hover{
+    background-color: #3e8e41;
+}
+#upload-button{
+    background-color: #3caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+#upload-button:hover{
+    background-color: #5e8e41;
+}
+#image-preview img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.icon444{
+    padding-top: 10px;
+}
+.option{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+
+
+@media (max-width:768px) {
+    .sect{
+        height: 150vh;
+    }
+    .par3{
+        font-size: 50px;
+    }
+    .ima{
+        height: 50vh;
+        margin-left: 20px;
+    }
+.icons{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    nav ul {
+        font-size: smaller;
+        gap: 20px;
+    }
+    nav ul li{
+        
+        border-radius: 15px;
+        width: 20%;
+        
+    }     
+    .first{
+        height: 50px;
+        background-color: #000;
+    }   
+    .icon4{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        margin-left: 10px;
+        margin-left: 10px; 
+    }
+    .icon10{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        margin-left: 10px; 
+        margin-left: 10px; 
+    }
+    .icon20{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .number{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .sub-footer{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        font-family: sans-serif;
+        font-size: 20px;
+    }
+}
+@media(max-width:1100px){
+    .sect{
+ 
+        
+        height: 140vh;
+        
+    } 
+    .par3{
+        font-size: 55px;
+    }
+
+}
